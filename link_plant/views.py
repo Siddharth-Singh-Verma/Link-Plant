@@ -4,6 +4,12 @@ from django.urls import reverse_lazy
 from .models import  Profile, Link
 # Create your views here.
 
+def landing_view(request):
+    # Replace 'your-slug-here' with your actual profile slug or dynamically get it
+    my_profile = Profile.objects.first()  # Or filter for the current user
+    return render(request, 'link_plant/landing.html', {'my_profile': my_profile})
+
+
 class LinkListView(ListView):
     model = Link # this will use the default template name: link_list.html
     #(modelname_list.html)
