@@ -57,13 +57,6 @@
    http://127.0.0.1:8000/
    ```
 
-## 📸 Screenshots
-
-- **Dashboard**
-- **Public Link Page**
-- **Link Manager Page**
-
-
 
 ## 🤝 Contributing
 
